@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Father's Day Card - Book Opening</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:black;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+
+  .card {
+    width: 400px;
+    height: 500px;
+    background-image:linear-gradient(45deg,black,grey,black);
+    border-radius: 10px;
+    box-shadow:inset 6px -6px 10px grey,
+               inset -6px 6px 10px black;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 2s ease;
+  }
+
+  .cover, .left-page, .right-page {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%; background-image:linear-gradient(65deg,white,navy,blue,white);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow:inset 5px -5px 10px blue,
+               inset -5px 5px 10px navy;
+               
+    transition: transform 2s ease;
+  }
+.cover{
+    background-image:linear-gradient(45deg,maroon,red,white);
+    font-size:23px;
+    width:100%;
+    left:0;
+    
+     box-shadow:inset 5px -5px 10px red,
+               inset -5px 5px 10px maroon;
+    transform-origin:left center;
+    transform:perspective(1000px)
+              rotateY(0deg);
+}
+.cover:hover{
+    transform:perspective(1000px)
+    rotateY(-90deg);
+}
+
+  .left-page {
+    left: 0;
+    transform-origin: left center;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  .right-page {
+    right: 0;
+    transform-origin: right center;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  .card:hover .left-page {
+    transform: perspective(1000px) rotateY(-90deg);
+  }
+
+  .card:hover .right-page {
+    transform: perspective(1000px) rotateY(90deg);
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size:40px;
+    text-shadow:2px 0px 0px black;
+    margin-bottom: 10px;
+  }
+ #message{
+     color:white;
+     text-shadow: 2px -2px 4px rgba(0,0,0,0.6),
+                -2px 2px 4px rgba(0,0,0,0.6);       
+     font-size:20px;
+     text-align:center;
+ }
+#msg{
+    color:white;
+    font-size:25px;
+}
+  p {
+    color:cyan;
+    font-size:20px;
+    line-height: 1.6;
+  }
+  .button{
+    height:30px;
+    width:100px;
+    font-weight:bold;
+    font-size:15px;
+    background-image:linear-gradient(70deg,red,maroon);
+    align-items:center;
+    display:flex;
+    padding:20px;
+    margin-left:100px;
+    text-align:center;
+    border-radius:50px; 
+    
+}
+a:link{
+    color:white;
+    text-decoration:none;
+}
+    
+</style>
+</head>
+<body>
+
+
+<div class="card">
+ <p id="message">
+     
+<b>"Dear Father,</b><br>
+
+Thank you so much 🤗 for being my rock, my guiding light 💥, and my shelter in the storm. Your unwavering support, unconditional love 😃, and invaluable guidance have shaped me into the person I am today. I am forever grateful for the sacrifices you've made for our family and for the countless memories we've shared. On this <b>Father's Day 😇</b>, I want to say thank you for raising me as a strong person. I love you more than words can express.❤
+<div class ="button"><a href="https://youtube.com/@coderhimani320?si=1RuNtyR-V6gZqs6Q">My Youtube Family</a></div>
+ </p>
+  <div class="cover">
+    <p id="msg">To the most influential man in my life 😊, my beloved Dad ,wishing 
+    <br>you</p>
+    <h2>Happy Father's Day 🤩</h2>
+  </div>
+  <div class="left-page">
+    <h2>Surprise! 🥳</h2>
+    <p>For the most amazing,wonderful and hard working person in the world. </p>
+    <p>From: My heart💖 </p>
+  </div>
+  <div class="right-page">
+    <h2>Surprise! 🥳</h2>
+    <p>For the most amazing,wonderful and hard working person in the world. </p>
+    <p>From: My heart 💖</p>
+  </div>
+</div>
+
+</body>
+</html>
